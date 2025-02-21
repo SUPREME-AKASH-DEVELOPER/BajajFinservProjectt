@@ -1,0 +1,12 @@
+{
+  "name": "bfhl-project",
+  "version": "1.0.0",
+  "description": "This repository contains a **full-stack** solution for the **Bajaj Finserv Health Dev Challenge (Qualifier 1)**, including both **backend (Node.js & Express)** and **frontend (React with Vite)**. The project is **fully deployable on Render.com**.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
