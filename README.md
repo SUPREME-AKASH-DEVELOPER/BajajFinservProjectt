@@ -3,7 +3,7 @@
 # Bajaj Finserv Health Dev Challenge - Qualifier 1
 1. Clone the repository:
 ```bash
-git clone <repository-url>
+git clone <https://github.com/SUPREME-AKASH-DEVELOPER/BajajFinservProjectt.git>
 ```
 
 2. Install dependencies:
