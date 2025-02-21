@@ -1,86 +1,126 @@
-# BajajFinservProjectt
+# **Bajaj Finserv Health Dev Challenge - Qualifier 1** 🚀  
 
-# Bajaj Finserv Health Dev Challenge - Qualifier 1
-Author
-AKASH LAKHWAN - 22BET10018
-1. Clone the repository:
-```bash
-git clone <https://github.com/SUPREME-AKASH-DEVELOPER/BajajFinservProjectt.git>
+### **Author**: **AKASH LAKHWAN - 22BET10018**  
+
+This repository contains a **full-stack** solution for the **Bajaj Finserv Health Dev Challenge (Qualifier 1)**, including both **backend (Node.js & Express)** and **frontend (React with Vite)**. The project is **fully deployable on Render.com**.  
+
+---
+
+## **📂 Clone the Repository**
+```sh
+git clone https://github.com/SUPREME-AKASH-DEVELOPER/BajajFinservProjectt.git
+cd BajajFinservProjectt
 ```
 
-2. Install dependencies:
-```bash
-# Backend
+---
+
+## **🚀 Installation & Setup**
+
+### **Backend Setup**
+```sh
 cd backend
 npm install
+```
 
-# Frontend
+### **Frontend Setup**
+```sh
 cd frontend
 npm install
 ```
 
-3. Start the development servers:
-```bash
-# Backend
-npm run dev
+---
 
-# Frontend
+## **🛠 Start the Development Servers**
+### **Run Backend**
+```sh
+cd backend
 npm run dev
 ```
 
-## 🧪 Testing
+### **Run Frontend**
+```sh
+cd frontend
+npm run dev
+```
 
-The application includes comprehensive testing:
+---
 
-```bash
-# Run backend tests
+## **🧪 Testing**
+This project includes **comprehensive testing** to ensure reliability.  
+
+### **Run Backend Tests**
+```sh
 cd backend
 npm test
+```
 
-# Run frontend tests
+### **Run Frontend Tests**
+```sh
 cd frontend
 npm test
 ```
 
-## 📦 Project Structure
+---
 
+## **📦 Project Structure**
 ```
-project/
-├── backend/             # Backend API server
-│   ├── src/
-│   ├── tests/
-│   └── package.json
+BajajFinservProjectt/
+├── backend/             # Backend API server (Node.js & Express)
+│   ├── src/             # API logic & controllers
+│   ├── tests/           # Unit & integration tests
+│   ├── package.json
+│   ├── Procfile         # Required for Render.com deployment
+│   ├── render.yaml      # Optional auto-deploy configuration
+│   └── index.js
 │
-├── frontend/            # React frontend application
-│   ├── src/
-│   ├── public/
-│   └── package.json
+├── frontend/            # React frontend application (Vite)
+│   ├── src/             # React components & pages
+│   ├── public/          # Static assets
+│   ├── package.json
+│   ├── vite.config.js   # Optimized build settings
+│   └── index.html
 │
-└── README.md
+└── README.md            # Project Documentation
 ```
 
-## 🤝 Challenge Requirements
+---
 
-### Backend Requirements
-- ✅ POST /bfhl endpoint implementation
-- ✅ GET /bfhl endpoint implementation
-- ✅ Proper error handling
-- ✅ Input validation
-- ✅ Secure deployment
+## **🤝 Challenge Requirements**
+### **✅ Backend Requirements**
+- ✅ **POST /bfhl** endpoint implementation  
+- ✅ **GET /bfhl** endpoint implementation  
+- ✅ **Proper error handling & validation**  
+- ✅ **Secure deployment on Render**  
 
-### Frontend Requirements
-- ✅ JSON input validation
-- ✅ Multi-select dropdown implementation
-- ✅ Dynamic response rendering
-- ✅ Roll number as website title
-- ✅ Clean user interface
+### **✅ Frontend Requirements**
+- ✅ **JSON input validation**  
+- ✅ **Multi-select dropdown implementation**  
+- ✅ **Dynamic response rendering**  
+- ✅ **Website title set to roll number**  
+- ✅ **Responsive & clean UI**  
 
-## 📄 License
+---
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+## **🌍 Deployment**
+### **Backend API (Node.js & Express)**
+- Hosted on: **[Render.com](https://your-backend-url.onrender.com/bfhl)**  
 
-## 🙏 Acknowledgments
+### **Frontend (React & Vite)**
+- Hosted on: **[Github.com](https://supreme-akash-developer.github.io/BajajFinservProject-frontend/)**
 
-- Bajaj Finserv Health for the opportunity
-- Chandigarh University for the support
-- All open-source libraries used in this project
+---
+
+## **📄 License**
+This project is licensed under the **MIT License** – see the [LICENSE](LICENSE) file for details.  
+
+---
+
+## **🙏 Acknowledgments**
+- **Bajaj Finserv Health** for the opportunity  
+- **Chandigarh University** for the support  
+- **All open-source libraries** used in this project  
+
+---
+
+🚀 **Built with ❤️ by AKASH LAKHWAN (22BET10018)**  
+Let me know if you need any modifications! 😊🔥
