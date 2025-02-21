@@ -1,6 +1,8 @@
 # BajajFinservProjectt
 
 # Bajaj Finserv Health Dev Challenge - Qualifier 1
+Author
+AKASH LAKHWAN - 22BET10018
 1. Clone the repository:
 ```bash
 git clone <https://github.com/SUPREME-AKASH-DEVELOPER/BajajFinservProjectt.git>
