@@ -4,7 +4,9 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 
 const app = express();
-const port = 3001;
+
+// Use dynamic port for Render deployment
+const port = process.env.PORT || 3001;
 
 // Middleware
 app.use(cors());
@@ -12,25 +14,32 @@ app.use(bodyParser.json());
 
 // Helper function to process data
 const processData = (data) => {
-    const numbers = data.filter(item => !isNaN(item));
+    const numbers = data.filter(item => typeof item === 'number');
     const alphabets = data.filter(item => /^[a-zA-Z]$/.test(item));
-    const highestAlphabet = alphabets.filter(item => item === alphabets.sort().reverse()[0]);
+    
+    // Get the highest alphabet (case-insensitive comparison)
+    const highestAlphabet = alphabets.length > 0 
+        ? [alphabets.sort((a, b) => b.localeCompare(a, undefined, { sensitivity: 'base' }))[0]]
+        : [];
+
     return { numbers, alphabets, highestAlphabet };
 };
 
-// GET Route
+// GET Route (Health Check)
 app.get('/bfhl', (req, res) => {
     res.json({ operation_code: 1 });
 });
 
-// POST Route
+// POST Route (Main Logic)
 app.post('/bfhl', (req, res) => {
     const { data } = req.body;
 
-    if (!Array.isArray(data)) {
-        return res.status(400).json({ error: "Invalid input" });
+    // Validate input
+    if (!Array.isArray(data) || data.length === 0) {
+        return res.status(400).json({ error: "Invalid input. 'data' should be a non-empty array." });
     }
 
+    // Process data
     const { numbers, alphabets, highestAlphabet } = processData(data);
 
     res.json({
@@ -46,5 +55,5 @@ app.post('/bfhl', (req, res) => {
 
 // Start Server
 app.listen(port, () => {
-    console.log(`Backend running on https://bajajfinservprojectt.onrender.com:${port}`);
+    console.log(`✅ Backend running on: https://bajajfinservprojectt.onrender.com`);
 });
