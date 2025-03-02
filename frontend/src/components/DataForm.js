@@ -12,7 +12,7 @@ const DataForm = () => {
     const data = input.split(",").map(item => item.trim());
 
     try {
-      const response = await axios.post("http://localhost:3001/bfhl", { data });
+      const response = await axios.post("https://bajajfinservprojectt.onrender.com/bfhl", { data });
       setResult(response.data);
       setError("");
     } catch (err) {
