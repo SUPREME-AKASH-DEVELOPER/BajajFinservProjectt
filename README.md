@@ -106,7 +106,7 @@ BajajFinservProjectt/
 - Hosted on: **[Render.com](https://bajajfinservprojectt.onrender.com)**  
 
 ### **Frontend (React & Vite)**
-- Hosted on: **[Github.com](https://supreme-akash-developer.github.io/BajajFinservProject-frontend/)**
+- Hosted on: **[Netify.app](https://bajajfinservprojecthealthdevchellange.netlify.app/)**
 
 ---
 
